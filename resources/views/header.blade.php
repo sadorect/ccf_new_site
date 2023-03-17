@@ -72,7 +72,7 @@
               <li><a class="section-scroll" href="#news">Blog</a></li>
               <li><a class="section-scroll" href="#contact">Counselling</a></li>
               <li><a class="section-scroll" href="#team">Team</a></li>
-              <li><a class="section-scroll" href="/lobby">Forum</a></li>
+              <li><a class="section-scroll" href="/login">Forum</a></li>
             </ul>
           </div>
         </div>

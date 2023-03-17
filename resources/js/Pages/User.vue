@@ -75,7 +75,7 @@ defineProps ({ posts: Object, user: Object, likes: Object })
             </button>
           </Link>
           <Link  v-if="$page.props.auth.user.id !== user.id"
-          :href="'/create-follow/{{user.id}}'" class="flex justify-center w-7/12 md:w-[160px] items-baseline md:my-0 my-4 bg-blue-200 hover:bg-blue-600 hover:text-white rounded-lg cursor-pointer">
+          :href="'/create-follow/' + user.id" class="flex justify-center w-7/12 md:w-[160px] items-baseline md:my-0 my-4 bg-blue-200 hover:bg-blue-600 hover:text-white rounded-lg cursor-pointer">
             <button class="flex items-center px-5 py-2 font-bold">
               <AccountMultiple class="-ml-2 mr-1" :size="22" /> Follow +
             </button>

@@ -26,6 +26,11 @@ Route::get('/welcome', function () {
 })->name('homepage');
 */
 
+Route::get('/guest', function () {
+    return view('homepage');
+});
+
+
 Route::get('/welcome', function () {
     return Inertia::render('HomePage');
 });
