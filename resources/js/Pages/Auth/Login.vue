@@ -6,6 +6,8 @@ import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
+//import { useRouter, useRoute } from 'vue-router';
+//import { RouterLink } from 'vue';
 
 defineProps({
     canResetPassword: Boolean,
@@ -17,6 +19,13 @@ const form = useForm({
     password: '',
     remember: false,
 });
+
+//const routes = {useRoute}; 
+//const routes = useRoute([{ path: '/login', redirect: '/guest' }]);
+
+const guest = () => {
+    window.location.href = "/guest"
+};
 
 const submit = () => {
     form.post(route('login'), {
@@ -85,11 +94,15 @@ const submit = () => {
                     </Link>
                 </div>
         </form>
-        <!--div class="border-b border-b-gray-200"></div>
+        <div class="border-b border-b-gray-200"></div>
                 <div class="flex items-center justify-center pt-6 pb-2">
-                    <Link href="/guest" class="px-5 py-3 text-white bg-[#21212D] hover:bg[#37A621] text-[20px] font-bold rounded-lg">
-                    Browse as guest
-                    </Link>
-                </div-->
-    </GuestLayout>
+                    <button @click="guest" class="px-5 py-3 text-white bg-[#21212D] hover:bg[#37A621] text-[20px] font-bold rounded-lg">
+                        <div class="px-5 py-3 text-white bg-[#21212D] hover:bg[#37A621] text-[20px] font-bold rounded-lg">
+            Browse as guest
+          </div>
+        
+        </button>
+                </div>
+        
+          </GuestLayout>
 </template>
