@@ -95,8 +95,13 @@ const submit = () => {
                 </div>
         </form>
         <div class="border-b border-b-gray-200"></div>
-                <div class="flex items-center justify-center pt-6 pb-2">
-                    <button @click="guest" class="px-5 py-3 text-white bg-[#21212D] hover:bg[#37A621] text-[20px] font-bold rounded-lg">
+        <div class="flex items-center justify-center pt-3 "> 
+         <div class="px-5 text-blue text-[20px] font-bold rounded-lg">
+          Don't want to create an account yet?
+          </div>
+                </div>
+                <div class="flex items-center justify-center pt-6 pb-2"> 
+                    <button @click="guest" class="px-2 py-2 w-full text-white bg-[#21212D] hover:bg[#37A621] text-[20px] font-bold rounded-lg">
                         <div class="px-5 py-3 text-white bg-[#21212D] hover:bg[#37A621] text-[20px] font-bold rounded-lg">
             Browse as guest
           </div>
