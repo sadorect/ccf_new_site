@@ -661,18 +661,18 @@
 </template>
 
 <script setup>
-
-  import 'frontend/assets/lib/jquery/dist/jquery.js'
-  import 'frontend/assets/lib/bootstrap/dist/js/bootstrap.min.js'
-  import 'frontend/assets/lib/wow/dist/wow.js'
-  import 'frontend/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js'
-  import 'frontend/assets/lib/isotope/dist/isotope.pkgd.js'
-  import 'frontend/assets/lib/imagesloaded/imagesloaded.pkgd.js'
-  import 'frontend/assets/lib/flexslider/jquery.flexslider.js'
-  import 'frontend/assets/lib/owl.carousel/dist/owl.carousel.min.js'
-  import 'frontend/assets/lib/smoothscroll.js'
-  import 'frontend/assets/lib/magnific-popup/dist/jquery.magnific-popup.js'
-  import 'frontend/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js'
-  import 'frontend/assets/js/plugins.js'
-  import 'frontend/assets/js/main.js'
+import "./init"
+  import '/frontend/assets/lib/jquery/dist/jquery.js'
+  import '/frontend/assets/lib/bootstrap/dist/js/bootstrap.min.js'
+  import '/frontend/assets/lib/wow/dist/wow.js'
+  import '/frontend/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js'
+  import '/frontend/assets/lib/isotope/dist/isotope.pkgd.js'
+  import '/frontend/assets/lib/imagesloaded/imagesloaded.pkgd.js'
+  import '/frontend/assets/lib/flexslider/jquery.flexslider.js'
+  import '/frontend/assets/lib/owl.carousel/dist/owl.carousel.min.js'
+  import '/frontend/assets/lib/smoothscroll.js'
+  import '/frontend/assets/lib/magnific-popup/dist/jquery.magnific-popup.js'
+  import '/frontend/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js'
+  import '/frontend/assets/js/plugins.js'
+  import '/frontend/assets/js/main.js'
 </script>
