@@ -1,6 +1,5 @@
 <script setup>
 import { computed, onMounted, onUnmounted, watch } from 'vue';
-
 const props = defineProps({
     show: {
         type: Boolean,
@@ -15,9 +14,7 @@ const props = defineProps({
         default: true,
     },
 });
-
 const emit = defineEmits(['close']);
-
 watch(
     () => props.show,
     () => {
@@ -28,26 +25,21 @@ watch(
         }
     }
 );
-
 const close = () => {
     if (props.closeable) {
         emit('close');
     }
 };
-
 const closeOnEscape = (e) => {
     if (e.key === 'Escape' && props.show) {
         close();
     }
 };
-
 onMounted(() => document.addEventListener('keydown', closeOnEscape));
-
 onUnmounted(() => {
     document.removeEventListener('keydown', closeOnEscape);
     document.body.style.overflow = null;
 });
-
 const maxWidthClass = computed(() => {
     return {
         sm: 'sm:max-w-sm',
