@@ -26,12 +26,12 @@ const createComment = () => {
     })
 }
 const deleteComment = (id) => {
-    router.delete('/comment/' + id, {
+    router.post('/comment/' + id, {
         preserveScroll: true
     })
 }
 const deletePost = (id) => {
-    router.delete('/post/' + id, {
+    router.post('/post/' + id, {
         preserveScroll: true
     })
 }
